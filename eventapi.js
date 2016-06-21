@@ -7,7 +7,7 @@ $(document).ready(function(){
       console.log(p);
     
     
-    var queryURL = 'https://api.eventful.com/json/events/search?app_key=P69H26fPKMJfCRcm&q=music&l=' + p + '&within=10&units=miles';
+    var queryURL = 'https://crossorigin.me/http://api.eventful.com/json/events/search?app_key=P69H26fPKMJfCRcm&q=music&l=' + p + '&within=10&units=miles';
 
     console.log(queryURL);
 
@@ -16,9 +16,7 @@ $(document).ready(function(){
     $.ajax({ 
       url: queryURL, 
       method: 'GET',
-      headers: {
-        'Access-Control-Allow-Origin': 'https://safe-cove-36433.herokuapp.com'
-      }
+      dataType: 'json'
     })
     .done(function(response) {
       console.log('done');
