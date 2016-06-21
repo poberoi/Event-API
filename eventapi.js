@@ -39,20 +39,6 @@ $(document).ready(function(){
         console.log(infoDiv.data('lng'));
         $('#eventsDisplay').append(infoDiv);
       }
-    //   //   var p = $('<p>').text('Rating: ' + rating);
-    //   //   var personImage = $('<img>');
-    //   //   personImage.attr('src', results[i].images.original_still.url);
-    //   //   personImage.attr('width', 200);
-    //   //   personImage.attr('data-still', results[i].images.original_still.url);
-    //   //   personImage.attr('data-animate', results[i].images.fixed_height.url);
-    //   //   personImage.attr('data-state', 'still');
-    //   //   console.log(personImage);
-    //   //   gifDiv.append(p)
-    //   //   gifDiv.append(personImage)
-    //   //   $('#eventsDisplay').append(gifDiv);
-    //   // }
-      
-    // });
       
     }).error(function(data) {
       console.log('in error', data);
