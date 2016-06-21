@@ -16,7 +16,9 @@ $(document).ready(function(){
     $.ajax({ 
       url: queryURL, 
       method: 'GET',
-      dataType: 'json'
+      headers: {
+        'Access-Control-Allow-Origin': 'https://safe-cove-36433.herokuapp.com'
+      }
     })
     .done(function(response) {
       console.log('done');
