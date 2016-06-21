@@ -7,7 +7,7 @@ $(document).ready(function(){
       console.log(p);
     
     
-    var queryURL = 'https://crossorigin.me/http://api.eventful.com/json/events/search?app_key=P69H26fPKMJfCRcm&q=music&l=' + p + '&within=10&units=miles';
+    var queryURL = 'http://api.eventful.com/json/events/search?app_key=P69H26fPKMJfCRcm&q=music&l=' + p + '&within=10&units=miles';
 
     console.log(queryURL);
 
